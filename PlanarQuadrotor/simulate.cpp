@@ -84,7 +84,7 @@ int main(int argc, char *args[])
                     {
                         SDL_GetMouseState(&x, &y);
                         std::cout << "Left mouse button clicked Mouse position: (" << x << ", " << y << ")" << std::endl;
-                        goal_state << x, y, 0, 0, 0, 0;
+                        goal_state << x-640, y-360, 0, 0, 0, 0;
                         quadrotor.SetGoal(goal_state);
                     }
                 }
